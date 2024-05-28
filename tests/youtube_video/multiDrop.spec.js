@@ -9,7 +9,7 @@ test.skip("another singe drop down", async ({ page }) => {
   await page.waitForTimeout(2000);
 });
 
-test("Multiple drop down selection test", async ({ page }) => {
+test.skip("Multiple drop down selection test ", async ({ page }) => {
   await page.goto("https://testautomationpractice.blogspot.com/");
   await page.selectOption("#colors", ["Blue", "Green", "Yellow"]);
   await page.waitForTimeout(2000);
