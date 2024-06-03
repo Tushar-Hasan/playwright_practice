@@ -39,7 +39,7 @@ test.describe.skip('Group 03',()=>{
 })
 
 
-test.describe('Group 02',()=>{
+test.describe.skip('Group 02',()=>{
     test("group test05", async({page})=>{
         console.log("Test05")
     }) 

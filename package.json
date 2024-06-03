@@ -2,13 +2,16 @@
   "name": "playwrightwithjavascript",
   "version": "1.0.0",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test \"<file_name>.spec.js\" --headed --project=chromium"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
-    "@types/node": "^20.12.11"
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.12.11",
+    "allure-playwright": "^2.15.1"
   }
 }

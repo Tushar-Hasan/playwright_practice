@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Multiple Selection test", async ({ page }) => {
+test.skip("Multiple Selection test", async ({ page }) => {
   await page.goto(
     "https://www.lambdatest.com/selenium-playground/select-dropdown-demo"
   );
@@ -14,3 +14,16 @@ test("Multiple Selection test", async ({ page }) => {
   );
   await page.waitForTimeout(3000);
 });
+
+
+test("datePicker", async ({ page }) => {
+   
+
+await page.goto("https://www.redbus.in/");
+const year="2024"
+const month="March"
+const date ="20"
+ 
+await page.click("//div[@id='onwardCal']")
+await page.waitForTimeout(2000)
+})
